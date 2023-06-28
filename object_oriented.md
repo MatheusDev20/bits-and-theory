@@ -33,8 +33,15 @@ print(my_dog.bark())  # prints "Woof!"
 ```
 
 Inheritance.
-  When we create an instance of an object that inherits from a parent, the methods of the same name of that object overrides the parent methods.
-
+  When we create an instance of an object that inherits from a parent, the methods of the same name of that objec   
   That happens because "self" points to the "Children class" and therefore calls the method of this class not the parent.
 
 
+Sum up:
+  So, the paradigm is just about sending messages to call methods from an instance (Object) of a class.
+  With Inheritance, we can also have code reuse, and create a hierarchy of objects modifing just some behaviors, and use the advantages of Polymorphis to make the message work either way.
+
+
+Cool Concepts:
+  Uniforme Reference: Everything is a object like Ruby.
+  
