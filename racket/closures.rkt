@@ -1,3 +1,6 @@
+;; L22 Enviroments and State.
+;; L23 Enviroments.
+
 (define (make-count)
     (let ((result 0))
         (lambda ()
@@ -20,7 +23,7 @@
 
 (define c1 (make-count))
 ;; and i called c1 multiple times
-(c1) => 1
+(c1) => 1 
 (c1) => 2
 
 ;; the variable result, will keep the value and increment all the way.
