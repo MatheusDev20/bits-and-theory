@@ -83,6 +83,15 @@
 (define (y-point point)
   (cdr point)
 )
+(define (print-point p)
+  (newline)
+  (display "(")
+  (display (x-point p))
+  (display ",")
+  (display (y-point p))
+  (display ")"))
+
+
 ;; Each point being a pair
 (define (make-segment point1 point2)
   (cons point1 point2)
@@ -94,6 +103,8 @@
 (define (end-segment segment)
   (cdr segment)
 )
+;; midpoint-segment can use the ADT segment, that rely on pointer without know the implementation
+
 (define midpoint-segment segment)
   (let ((start (start-segment segment))
         (end (end-segment segment)))
@@ -101,3 +112,25 @@
                 (/ (+ (y-point start) (y-point end)) 2)
     )
   )
+
+;; 2.3
+;; Point ADT
+(define (make-point x y)
+  (cons x y)
+)
+(define (x-cordinate point)887
+  (car x)
+)
+(define (y-cordinate point)
+ (cdr point)
+)
+(define (make-segment p1 p2)
+  (cons p1 p2)
+)
+
+(define (start-segment segment)
+  (car segment)
+)
+(define (end-segment segment)
+  (cdr segment)
+)
