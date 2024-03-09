@@ -21,12 +21,11 @@ fun nth_tail_lame (n,xs) =
 (* this is much better: as always, abstract the common pieces into a function
    n_times(f,n,x) returns f(f(...(f(x)))) where there are n calls to f
    note: if we gave x type int, then we could not use this for lists
-*)
+*)'
 fun n_times (f,n,x) = 
     if n=0
     then x
     else f (n_times(f,n-1,x))
-
 
 fun increment x = x+1
 

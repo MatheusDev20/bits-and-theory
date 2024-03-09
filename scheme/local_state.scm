@@ -55,6 +55,7 @@
 (W1 50) ;; 50
 (W1 30) ;; 70
 
+;; Account with a dispatch function, to act inside the local state.
 (define (make-account balance)
   (define (withdraw amount)
     (if (>= balance amount)
@@ -107,3 +108,18 @@ dispatch)
                 ((eq? message 'how-many-calls) calls-counter)
                 ((eq? message 'reset-count) (begin (set! counter 0) calls-counter))
                 (else (begin (set! calls-counter (+ calls-counter 1)) (f message)))))))
+
+;; Exercise 3.3
+ (define (make-account balance password) 
+   (define (withdraw amount) 
+     (if (>= balance amount) (begin (set! balance (- balance amount)) balance) 
+         "Insufficient funds")) 
+   (define (deposit amount)
+     (set! balance (+ balance amount)) balance) 
+   (define (dispatch p m) 
+     (cond ((not (eq? p password)) (lambda (x) "Incorrect password")) 
+           ((eq? m 'withdraw) withdraw) 
+           ((eq? m 'deposit) deposit)
+           (else (error "Unknown request -- MAKE-ACCOUNT" m)))) 
+   dispatch)
+
