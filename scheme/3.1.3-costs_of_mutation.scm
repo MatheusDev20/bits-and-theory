@@ -63,6 +63,7 @@
   (iter 1 1))
 
 ;; Imperative Style 
+;; You always have to reason about the state of the variables, and the order of the operations
 (define (factorial n)
   (let ((product 1)
         (counter 1))
@@ -73,3 +74,4 @@
                  (set! counter (+ counter 1))
                  (iter))))
     (iter)))
+  
