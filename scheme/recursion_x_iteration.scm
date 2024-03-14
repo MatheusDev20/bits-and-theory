@@ -2,10 +2,10 @@
 
 ; Recursive count
 (define (count seq) 
-    (if (null? seq))
-        0
-    (+ 1 (count (cdr seq)))
-)
+    (if (null? seq)
+    0
+    (+ 1 (count (cdr seq)))))
+
 ; Each call creates a call stack of recursive calls, the callers keep waiting the response of the recursive call
 ;; All the information that must be keeped between the recursive calls takes memory
 ; till the function reach the base case.

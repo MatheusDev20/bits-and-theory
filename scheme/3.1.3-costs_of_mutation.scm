@@ -11,8 +11,9 @@
 
 ;; Are D1 and D2 the same?
 ;; Reasonable yes, cause there is no mutation or assignment happening on make-decrementer, no side Effects.
+
 ;; The procedure subtract an input by 25.
-;; D1 can be substitude by D2 in any computation without changing the behaviour (Referential Transparency)
+;; D1 can be substitude by D2 in any computation without changing the behaviour -> (Referential Transparency)
 
 ;; Now take a look
 
@@ -31,11 +32,13 @@
 (W1 20) ;; -15 
 
 ;; Two same expressions called generated different values
-;; Not functional programming anymore, the side effect of change balance with set! change all the behaviour.
+;; Not functional programming anymore, the side effect of change balance with set! change all the behaviour
+;; Functions not long can be "mathematical functions" or "pure"
+
 
 (W2 20) ;; 5
 
-;; Also, calls to W2 with the same argument to W1 does not generate the same result, lost of referential transparency
+;; Also, calls to W2 with the same argument to W1 does not generate the same result, lost of Referential Transparency
 ;; They CANNOT be replace in a expression and generate the same value.
 
 ;; CONCEPT OF ALIASES.
@@ -46,3 +49,27 @@
 
 ;; Withdraws or operations realized on petter-acc will make changes on paul-acc since they are alias.
 ;; Dangerous thing working in programing languages that allow mutation, dificult to reason about problems.
+
+
+;; Pitfalls imperative programming
+
+;; Iteration factorial
+(define (factorial n)
+  (define (iter product counter)
+    (if (> counter n)
+        product
+        (iter (* counter product)
+              (+ counter 1))))
+  (iter 1 1))
+
+;; Imperative Style 
+(define (factorial n)
+  (let ((product 1)
+        (counter 1))
+    (define (iter)
+      (if (> counter n)
+          product
+          (begin (set! product (* counter product))
+                 (set! counter (+ counter 1))
+                 (iter))))
+    (iter)))
