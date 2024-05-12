@@ -33,5 +33,3 @@ end
 
 phrase = Lecture8.recursive_count("I wanna hold your hand")
 phrase2 = Lecture8.iterative_count("I wanna hold your hand")
-IO.inspect(phrase)
-IO.inspect(phrase2)
