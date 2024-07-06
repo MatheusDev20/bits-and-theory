@@ -4,4 +4,4 @@ cd scheme && touch simplyscm
 install docker
 sudo docker pull stklos/stklos:latest
 sudo docker run -v $(pwd):/home -it stklos/stklos:latest
-stklos>(load "61A/simplyscm")
+stklos>(load "/home/simplyscm")
