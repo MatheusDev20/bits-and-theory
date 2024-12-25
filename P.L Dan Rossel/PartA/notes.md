@@ -13,9 +13,17 @@
 ```
 
 ### Functions
-  > Kind of binding treat as the same way as values ( Hello functional programmers ) it receives an input (...args) and computes something to give a return
-  > They are ?pure? if we have no side effects, same inputs always the same output and also does not depende on any external state
-  > Give us lot of good stuff, like Referential transparency, imutability for concurrent enviroments and it is easy to reason about the function overall.
+  > Kind of binding treat as the same way as values ( Hello functional programmers ) it receives an input (...args) and computes something to give a return  
+
+  > They are ?pure? if we have no side effects, same inputs always the same output and also does not depende on any external state  
+
+  > Give us lot of good stuff, like Referential transparency, imutability for concurrent environments and it is easy to reason about the function overall.  
+
+  >Rules of evaluation are quite simple e0(e1,..., en)  
+
+  - >Evaluates e0, the function name doing an lookup in the enviroment to find the binding  
+  -  >Evaluates eagerly ( for now ), e1 and en the arguments  
+  -  >Extend the enviroment to bind the args to the new valuesand evaluates the body itself, possibily closes over the global enviroment to use any variable if nedded.
 
 ```sml 
 (* Little example of a pow recursive function *)
