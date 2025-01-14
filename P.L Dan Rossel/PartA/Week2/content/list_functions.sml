@@ -5,6 +5,11 @@ fun sum_list(xs: int list) =
 
 val sum = sum_list[1,2,3]
 
+fun product_list(xs: int list) =
+    if null xs
+    then 1
+    else hd xs * product_list(tl xs)
+
 
 fun countdown (x: int) =
     if x=0
@@ -17,7 +22,9 @@ val countdown1 = countdown(8)
 fun append(xs: int list, ys: int list) = 
     if null xs
     then ys
-    else (hd xs) :: append((tl,xs), ys)
+    else (hd xs) :: append(tl xs, ys)
+
+val appended_items = append([1, 2, 3], [4,5])
 (* (int list) * (int list) -> int list *)
 
 (* Sum a list of pairs *)
@@ -68,4 +75,5 @@ fun factorial(x: int) =
     then 1
     else x * factorial(x-1)
 
+fun factorial_better (n:int) = list_product(countdownn n)
 val result = factorial(15)

@@ -1,5 +1,7 @@
 (* let expressions *)
 (* Scope bindings *)
+
+(* int -> int *)
 fun silly1 (z: int) = 
     (* x and y are only available locally to be use on the body "e" of the let exp *)
     let
@@ -7,7 +9,6 @@ fun silly1 (z: int) =
         val y = x + z + 9
     in
         if x > y then x * 2 else y * y
-
     end
 
 val eval = silly1(3)

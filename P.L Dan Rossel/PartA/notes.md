@@ -35,3 +35,16 @@
 
   pow(x, 3) => Cube 
 ```
+
+### Lists
+>Way to build compound data, in SML all lists must be the same type and can be build with the constructor "list" for "[]"
+
+### Let Expressions
+> A Way to introduce local bindings and scope and inner enviroments simply defined by
+  ```sml 
+  let (bindings) in (exp) end
+  (* And the whole thing evaluates based on the bindings defined )
+  ```
+  > Using to define local scope functions and nested functions 
+    [Examples](Week2/content/nested_functions.sml)
+
