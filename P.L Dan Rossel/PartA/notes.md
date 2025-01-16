@@ -46,5 +46,4 @@
   (* And the whole thing evaluates based on the bindings defined )
   ```
   > Using to define local scope functions and nested functions 
-    [Examples](Week2/content/nested_functions.sml)
-
+    [Examples](Week2/content/nested_functions.sml);
