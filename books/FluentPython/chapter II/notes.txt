@@ -1,0 +1,11 @@
+Sequences
+-> Container sequences -> list, tuple, collections.deque
+-> Flat Sequences -> str, bytes, array.array
+
+-> Container sequences hold on each value a reference to the object itself
+-> Flat sequence store the value in this own memory
+
+Mutable Sequences -> list, bytearray, array.array and collections.deque
+Immutable Sequences -> tuple, str, bytes
+
+

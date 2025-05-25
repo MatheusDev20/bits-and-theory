@@ -1,0 +1,6 @@
+- Representing and manipulating Information
+
+-> All the information is represented using the binary system.
+
+-> Tudo que um programa em nível de máquina enxerga é a Virtual Address Space.
+

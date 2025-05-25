@@ -1,0 +1,33 @@
+Process:
+  -> Chamamos de processos a abstração para um programa rodando.
+    a ideia de um processo é "mentir" para o programa dando a ilusão em que ele roda isolado
+    tendo acesso a toda memória ( Virtual Memory ) do computador.
+
+  -> Uma CPU consegue rodar múltiplos processos via Context Switching (https://en.wikipedia.org/wiki/Context_switch)
+  -> Aplicações rodando se comunicam com o Kernel do SO via "system calls" para executar ações como escrever
+    arquivos, ler arquivos dentro de processos.
+
+Threads:
+  -> Unidades de execução dentro de processos.
+  -> É mais simples transferir informações entre Threads do que entre processos.
+
+
+Virtual Memory:
+  -> Memória que pode ser acessada por cada processo.
+  -> Formada por áreas bem definidas.
+  
+      -> Program code and data
+        -> Inicia junto com o processo de execução do programa
+        -> Tamanho fixo
+        -> Em C, armazena as váriaveis globais.
+    
+      -> Heap
+        -> Tamanho dinamico
+        -> Alocada em tempo de execução por funções como "Malloc" e "free"
+
+      -> Shared libraries
+        -> Localizada no "meio" dos endereços da memória virtual, aloca os endereços para bibliotecas nativas.
+  
+      -> Stack
+        -> 
+
