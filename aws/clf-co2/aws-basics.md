@@ -52,5 +52,12 @@ This model defines the responsibilities of AWS and the customer when using AWS s
 - “**IN the cloud**” → Você cuida
 
 
-
+## AWS Support Plans
+  - Basic, Developer, Business, Enterprise ON-Ramp, Enterprise
+  - Basic
+      - Free for all users
+      - Slow response time
+  
+  - Developer
+      - Support automation workflows ( SAW )
 
