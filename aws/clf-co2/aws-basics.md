@@ -16,7 +16,7 @@ AWS’s infrastructure is globally distributed and organized in the following la
 ### 📍 Region
 - A geographic area that contains **two or more Availability Zones (AZs)**.
 - Example: `us-east-2` (Ohio).
-- Designed for **fault tolerance and high availability**, since multiple datacenters back each region.
+- Designed for **fault tolerance and high availability**, since multiple datacenters back each regio.n
 
 ### 🏢 Availability Zones (AZs)
 - One or more **data centers** within a region.
