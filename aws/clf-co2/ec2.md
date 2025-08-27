@@ -19,6 +19,7 @@
     -> Critical Workloads w/o interruptions, short term workloads ( Use Cases )
     -> Capacity Reservation option (Always have EC2 capacity ) scenarios where you NEED guaratee compute capacity
     -> Windows Pay by the Hour | Linux Pay by second
+    -> Pay as you go no long term commitment, control over instance state
     -> Highes Cost among other EC2 Options
 
   Spot Instances
