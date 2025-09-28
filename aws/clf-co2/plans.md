@@ -10,14 +10,18 @@ Personal Health Dashboard
   -> Personal view of each AWS service that you have
 
 ### Developer
-
+  Trusted Advisor limited to 7 core checks
+  No Access to AWS Support API
 
 ### Business 
+  AWS Support API 
+  Trusted Advisor
 
 
 ### Enterprise on Ramp
 All other features
 TAM (Technical Account Manager) point of contact to assist personally about best practices.
+Concierge Support Team
 
 
 ## Response Times

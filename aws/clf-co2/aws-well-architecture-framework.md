@@ -38,6 +38,14 @@ It helps architects:
 
 ---
 
+### Cloud Architecture Best Practices
+
+- Decouple your components
+- Think in paralell
+- Implement Elasticity
+- Design for failure
+
+
 ## 🔑 Key Concepts
 - A **Well-Architected Review** is a structured assessment of workloads against these pillars.
 - The framework promotes **continuous improvement** — it’s not one-time.
