@@ -12,7 +12,6 @@
   - NoSQL
   - SCcallabe, very fast and can handle spikes well
 
-
 ## Amazon Aurora
   -> MySQL and PostgresSQL databases
   -> Performance focused
